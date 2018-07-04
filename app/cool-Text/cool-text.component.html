@@ -1,0 +1,18 @@
+<form class="ui large form segment">
+  <div class="field">
+    <label for="text">Your Text:</label>
+    <input name="text" (keyup)="onText($event)"/>
+  </div>
+  <div class="field">
+    <label for="speed">Speed:</label>
+    <input name="speed" (keyup)="onSpeed($event)"/>
+  </div>
+  <div class="field">
+    <button (click)="refresh()">Submit</button>
+  </div>
+</form>
+
+<div class="text">
+  <div #ti class="content"></div>
+  <div class="dash"></div>
+</div>
