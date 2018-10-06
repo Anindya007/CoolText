@@ -26,7 +26,7 @@ export class CoolTextComponent {
  }
 
   refresh(){
-    debugger; 
+    
     this.coolText = new coolText(this.text,this.speed);
     this.coolText.init(this.el);
     return false;
